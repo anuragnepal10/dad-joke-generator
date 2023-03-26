@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+:root{
+    --clr-background: rgb(0, 36, 90);
+    --clr-primary: rgb(255, 227, 70);
+    --clr-light: rgba(83, 83, 83, 0.3);
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--clr-background);
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.card{
+    background-color: var(--clr-light);
+    min-height: 400px;
+    width: min(800px,90vw);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+h1{
+    color: var(--clr-primary);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+}
+
+p{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+button{
+    height: 3rem;
+    width: 20rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--clr-primary);
+    color: var(--clr-background);
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    filter: opacity(0.9);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+
